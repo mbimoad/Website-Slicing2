@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Francois+One&family=Kaushan+Script&family=Noto+Serif+TC:wght@500&family=Passion+One&family=Patua+One&family=Permanent+Marker&display=swap');
+
+
+
+
+.font1 {
+    font-family: 'Patua One', cursive;
+}
+
+.font2 {
+    font-family: 'Noto Serif TC', serif;
+}
+
+.font3 {
+    font-family: 'Francois One', sans-serif;
+} .blue .mybox hr {
+    background-color: var(--teksbiru);
+    height: 3px;
+}
+
+.font4 {
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    font-weight: 100;
+} .bold {
+    font-weight: bold;
+} 
+
+
+:Root {
+    --biru: #1f2630;
+    --putih: #ddd;
+    --teksbiru: #0ad3ed; 
+
+}
+
+.hilang {
+    transform: translate(0, 100px);
+    opacity: 0;
+    transition: all 500ms ease 0s;
+} .buka {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} body {
+    overflow-x: hidden;
+    font-family: 'Noto Serif TC', serif;
+} .logo img {
+    width: 50px;
+    height: 50px;
+}  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} header {
+    background-color: var(--biru);
+} .detail {
+    display: flex;
+    gap: 25px;
+} .detail h6 {
+    font-size: 0.6rem;
+}
+
+ul.navbar-nav { 
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} .nav-item .nav-link.active {
+    color:white;
+    border-bottom: 1px solid var(--putih);
+} .nav-item .nav-link {
+    color:white;
+} ul.navbar-nav input {
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 0 10px;
+    color:white;
+} .fa-search {
+    color:white;
+} .hiking-card {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap: 20px;
+}
+
+.navbar-brand {
+    color:white;
+}
+ .hero {
+    background-position: 0 0px;
+    position: relative;
+    height: 100vh;
+    background-image: url('hero.webp');
+    background-size: cover;
+} .banner {
+    padding: 50px;
+    position: absolute;
+    z-index: 99;
+    background-image: url('frame.webp');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+} .banner .box {
+    color:white;
+} .mountainimg {
+    height: 250px;
+    object-fit: cover;
+    object-position: -100px 0;
+    width: 250px;
+    border-radius: 50%;
+} .mybox.img {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}  .mybox.img h3 {
+    margin-top: 40px;
+    color:orangered;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.hiking .card {
+    text-align: center;
+} .hiking-icon {
+    width: 70px;
+}
+.hiking .card h5,
+.hiking .card p {
+    font-weight: bold;
+} .mybox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    gap: 0px;
+} .parent-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} .parent-box .mybox:first-child {
+    flex: 1;
+} .parent-box .mybox:last-child {
+    flex: 1;
+} .blue .parent-box .mybox:first-child {
+    flex: 1;
+} .blue .parent-box .mybox:last-child {
+    flex: 1;
+} 
+
+
+.autumn .card-body {
+    text-align: center;
+} .card-detail {
+    text-align: justify;
+} .circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+} .blue {
+    padding: 50px 0;
+    color:white;
+    background-color: var(--biru);
+} .blue .mybox.img h3 {
+    margin-top: 40px;
+    margin-top: 50px;
+    color:var(--teksbiru);
+} .banner-hero {
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('bannerimg.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+} a.btn-primary {
+    margin: auto;
+    display: block;
+    background-color: transparent;
+    width: 120px;
+    margin-top: 30px;
+    
+} a.btn-primary:hover {
+    background-color: transparent;
+} .banner-hero::before {
+    content: '';
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.534);
+    position: absolute;
+    left: 0;
+    right: 0;
+} .banner-text {
+    position: relative;
+    z-index: 999;
+    color:white;
+} .footer-logo img {
+    width: 30px;
+    height: 30px;
+} .footer-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+} .footer-logo p {
+    align-self: center;
+} .list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.list a {
+    text-decoration: unset;
+    color:#333;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .navbar-toggler {
+        background-color: #fff;
+    } .hiking-card {
+        justify-content:space-evenly;
+    }
+    .parent-box .mybox:first-child {
+        flex: 1;
+    } 
+    .mybox {
+        flex-direction: column;
+        gap: unset;
+    } .mybox p {
+        font-size: 0.8rem;
+    } .mybox h4 {
+        font-size: 0.9rem;
+    } .mybox h5 {
+        font-size: 1.1rem;
+    } .mybox h6 {
+        margin-top: 40px;
+        font-size: 1rem;
+    } 
+}
+
+@media screen and (max-width: 683px) {
+    .parent-box {
+        justify-content: center;
+        gap: 30px;
+    } .detail {
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .mybox,
+    .inner-box {
+        text-align: center;
+    } 
+    .footer1 {
+        text-align: center;
+    } .footer-logo {
+        justify-content: center;
+    } footer .col-md-4 .row {
+        text-align: center;
+    } footer .col-md-4 .row .col-md-3 {
+        margin-top: 20px;
+    } .hero {
+        background-position: 0 0px;
+        position: relative;
+        height: 200px;
+        background-image: url('hero.webp');
+        background-size: cover;
+    } .banner {
+        padding: 10px;
+        position: absolute;
+        z-index: 99;
+        background-image: url('frame.webp');
+        background-size: 100% 100%;
+        width: 100%;
+        height: 200px;
+    } 
+    .banner h1 {
+        font-size: 1rem;
+    }
+    .banner h5 {
+        font-size: 0.8rem;
+    }
+    .banner p {
+        font-size: 0.5rem;
+    }
+
+    .banner-hero {
+        background-position:-800px 0;
+    }
+}
